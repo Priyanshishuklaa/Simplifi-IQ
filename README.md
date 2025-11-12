@@ -1,7 +1,7 @@
 # Simplifi-IQ Assessment Submission (Parts A & B)
 
 ## Contents
-- `analyze_logs.py`— Part A script to analyze task logs and produce summary CSVs (time per user, time per task, top-3 tasks, invalid rows).  
+- `analyze_logs.py`— Part A script to analyze task logs and produce summary CSVs (time per user, time per task, top-3 tasks, output summary).  
 - `task_logs_sample.csv` — sample input CSV (8 rows with a few invalid rows).  
 - `summary_report.csv` — combined overall summary produced by Part A script.  
 - `scrape_summarize.py` — Part B script that reads URLs, scrapes pages, and summarizes content (uses Gemini API if configured, otherwise a local extractive summarizer).  
