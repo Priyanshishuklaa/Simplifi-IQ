@@ -1,0 +1,23 @@
+section,c1,c2,c3,c4
+time_per_user,user,total_minutes,,
+time_per_user,raj,120.0,,
+time_per_user,nina,60.0,,
+time_per_user,mira,45.0,,
+time_per_user,aisha,35.0,,
+time_per_user,sam,25.0,,
+,,,,
+time_per_task,task_type,total_minutes,,
+time_per_task,feature_dev,120.0,,
+time_per_task,data_cleanup,60.0,,
+time_per_task,documentation,60.0,,
+time_per_task,code_review,45.0,,
+,,,,
+top3_tasks,rank,task_type,total_minutes,
+top3_tasks,1,feature_dev,120.0,
+top3_tasks,2,data_cleanup,60.0,
+top3_tasks,3,documentation,60.0,
+,,,,
+invalid_rows,user,task_type,start,reason
+invalid_rows,aisha,feature_dev,2025-10-19 09:00:00,missing_duration
+invalid_rows,sam,data_cleanup,NaT,bad_timestamp
+invalid_rows,raj,code_review,2025-10-19 12:30:00,negative_duration
