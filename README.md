@@ -36,11 +36,11 @@ Dependencies:
 ---
 
 ## Part A — Analyze task logs
-**Files:** `analyze_logs_with_overall_summary.py`, `task_logs_sample.csv`
+**Files:** `analyze_logs.py`, `task_logs_sample.csv`
 
 Run (default names):
 ```bash
-python analyze_logs_with_overall_summary.py task_logs_sample.csv summary_report.csv
+python analyze_logs.py task_logs_sample.csv summary_report.csv
 ```
 - The script reads the CSV, cleans data (invalid timestamps -> NaT, non-numeric durations -> NaN, negative durations excluded), aggregates totals, and writes a combined `summary_report.csv` with sections.  
 - It also prints short summaries to the console.
