@@ -1,0 +1,14 @@
+AI Assist Log (optional)
+
+Tools used:
+- ChatGPT (assistant) to help write and refine Python scripts, create README and reflection, and design the summarization fallback.
+- Local testing in this environment to assemble and save files (no external web fetches performed here).
+
+Prompts (examples):
+1) "Help me write a Python script that reads a CSV of task logs and generates totals per user and per task_type, handles invalid data, and outputs summary CSVs." — used to produce analyze_logs.py.
+2) "Create a script that reads URLs from a file, fetches each webpage, extracts title/meta and creates a short summary. If an AI API key isn't present, include a simple extractive summarizer." — used to produce scrape_summarize.py.
+3) "Generate a README.md that explains how to run both Part A and Part B, dependencies, and assumptions." — used to produce README.md content.
+
+Notes on usage:
+- Prompts included desired file names and exact deliverables for the assessment.
+- The assistant produced fully commented scripts; I reviewed and adjusted variable names and file paths where needed before saving files for submission.

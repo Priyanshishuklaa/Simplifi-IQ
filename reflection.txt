@@ -1,0 +1,11 @@
+Reflection (<=300 words)
+
+What was the hardest part and why?
+The hardest part was designing a robust fallback for summarization that works without an API key. Webpages vary widely: some have minimal meta descriptions, others are heavy with boilerplate text or JavaScript-rendered content. Creating a simple extractive summarizer that produces useful, concise summaries for many kinds of pages required balancing sentence-scoring rules (so summaries are relevant) while keeping the algorithm small and explainable for the assessment.
+
+If your script fails, where would you debug first?
+1. Network fetches: check HTTP response codes and exceptions in `fetch_page` (timeouts, 403/429 rate limits). 2. Parsing: ensure `BeautifulSoup` is extracting the right elements (title/meta). 3. Data types: verify `pd.to_numeric` and `pd.to_datetime` conversions for Part A. 4. External API: confirm `GEMINI_API_KEY` and `GEMINI_API_URL`, and inspect API response payloads in `call_gemini_api` for schema mismatch.
+
+Which part could be replaced with n8n or LangChain?
+- **n8n**: Use it to orchestrate the workflow — read URLs, fetch pages (HTTP node), and call an LLM API node; write results to Google Sheets or CSV. This removes the need for a custom script for scheduling and retries. 
+- **LangChain**: Replace the summary logic with LangChain chains and prompt templates for better prompt management, caching, and memory. LangChain's document loaders and text splitters would handle larger pages more cleanly and enable advanced summarization strategies.
