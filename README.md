@@ -49,7 +49,6 @@ Outputs produced (examples):
 - `summary_time_per_user.csv` (optional separate outputs)
 - `summary_time_per_task.csv`
 - `summary_top3_tasks.csv`
-- `summary_invalid_rows.csv`
 - `summary_report.csv` (single combined file)
 
 Assumptions & choices:
