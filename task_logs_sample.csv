@@ -1,9 +1,0 @@
-user,task_type,start,duration_min
-aisha,data_cleanup,2025-10-18 09:10:12,35
-raj,feature_dev,2025-10-18 10:00:00,120
-mira,code_review,2025-10-18 11:20:00,45
-aisha,feature_dev,2025-10-19 09:00:00,NaN
-sam,data_cleanup,not_a_timestamp,30
-raj,code_review,2025-10-19 12:30:00,-15
-nina,documentation,2025-10-20 14:00:00,60
-sam,data_cleanup,2025-10-20 09:15:00,25
